@@ -1,0 +1,38 @@
+.seat-matrix {
+    margin-top: 20px;
+  }
+  
+  .matrix-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px; /* Adjust the gap between seats */
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    /* Add more styles for seat appearance (e.g., padding, border-radius, etc.) */
+  }
+  
+  /* Add styles for selected or unavailable seats */
+  .seat.selected {
+    border-color: green;
+    background-color: #98e79d; /* Green for selected seats */
+  }
+  
+  .seat.unavailable {
+    background-color: #f44336; /* Red for unavailable seats */
+  }
+
+  .seat.booked {
+    border-color: red; /* Change this to your desired border color for booked seats */
+    background-color: #ffc0cb; /* Change this to your desired background color for booked seats */
+  }
